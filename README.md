@@ -8,3 +8,5 @@ Matplotlib offers the possiblity of plotting graphs, fucnctional to the rapresen
 Given the possibility of exporting data from the website directly in an excel file it's possible to import it into the script and quickly sort the data to obrain the desidered graphs. 
 
 After few changes to the exported data it's possible for any users to exploit this simple script to visualise data in a orderd fashion.
+
+This code serves as a support to the Memoir of the student of Sorbonne Universitè (Paris) Axelle Domingues.

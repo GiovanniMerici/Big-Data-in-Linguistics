@@ -9,7 +9,7 @@ Given the possibility of exporting data from the website directly in an excel fi
 
 After few changes to the exported data it's possible for any users to exploit this simple script to visualise data in a ordered fashion.
 
-This code was written by Giovanni Merici, gradstudend in biology and master student in "Scienze Biomolecolari, Genomiche e Cellulari" at the Università degli Studi di Parma (Parma, Italy). It serves as a support to the Mémoire of Axelle Domingues, gradstudent in modern letters and master student in "Sciences du langages : linguistique française et générale" at Sorbonne Université (Paris, France). This work conducts the diachronic study of the apparition of connective phrases in french, from latin to classical french, particularly focusing on the grammaticalization stage occuring in middle french (1300-1549). 
+This code was written by Giovanni Merici, gradstudent in biology and master student in "Scienze Biomolecolari, Genomiche e Cellulari" at the Università degli Studi di Parma (Parma, Italy). It serves as a support to the Mémoire of Axelle Domingues, gradstudent in modern letters and master student in "Sciences du langages : linguistique française et générale" at Sorbonne Université (Paris, France). This work conducts the diachronic study of the apparition of connective phrases in french, from latin to classical french, particularly focusing on the grammaticalization stage occuring in middle french (1300-1549). 
 
 The data's organization allowed by Giovanni Merici's participation offers graphs that reveal without data loss the many tendancies in the evolution of several connecting phrases over centuries. 
 

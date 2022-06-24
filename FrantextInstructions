@@ -14,16 +14,18 @@ After having opened a new excel file, click on "Données" and "A partir du texte
 
 -4-Inform the ordered excel table
 
-A line needs to be added above the first line in order to have the space required to title the columns. Three should be precised, from left to right : "ID", the number of the result,"Cote", the identification of the source, "Date", the date of the occurence, "LC", the left context, "Forme", the form of the occurence and "RC", the right context.
+A line needs to be added above the first line in order to have the space required to title the columns. Six should be precised, from left to right : "ID", the number of the result,"Cote", the identification of the source, "Date", the date of the occurence, "LC", the left context, "Forme", the form of the occurence and "RC", the right context.
 
 -5-Import the finished ordered excel table to the code
 This import needs to be execute at the very beginning of the code. It is required in the first cell, which is represented here:
     import pandas as pd
     import matplotlib.pyplot as plt
     import numpy as np
+    webbrowser.open('https://www.frantext.fr') 
     excel = pd.read_excel ('Name.xlsx')
     f= excel.drop(columns=['ID','Cote','LC','RC'])
     x=input('insert first forme')
+    df = f[(f['Forme']==x)]
 All that is required to import the finished file is to replace "Name" by the actual name given to the saved file. After that, the code needs to be run and self-explainatory direction will be given during its course (such as "insert first form").
 
 Code written by : Giovanni Merici

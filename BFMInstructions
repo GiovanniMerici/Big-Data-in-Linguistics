@@ -1,0 +1,30 @@
+In order to use the tools, specific yet easy steps must be followed during the extraction of data from Frantext in order to produce the adequate dataframe. What follows is the methodology to apply whenever this tool is used.
+
+-1-Search for data on database Frantext
+ 
+Conduct a search, with Corpus Query Language (CQL) if advanced, in order to obtain the desired data from the database. 
+
+-2-Export the data from database Frantext
+ 
+Frantext allows you to export in .xlsx (excel) from the database once you've gathered the data. A window will open, giving options as to how the data will export. It is important to mind the limit of results currently allowed (10000 by default) called "Limiter le nombre de résultats à", as it should not diminish the amount of results that are contained in the data obtained from the search. The database then propose to export the forms found "Forme", but also "Catégorie" and "Lemme" which are criterias relevant to include grammatical analysis directly to the dataframe. That is not however relevant in our aim to organize data and, therefore, only "Forme" shall be picked. Then, context, "Taille du contexte" shall be reduced to 10 (instead of 100 by default) as our studies do not give importance to that criteria. Following that is "Inclure les métadonnées du document", which allows us to pick which metadata we want to see appear in our extraction. The ID of origin of the occurence, "Cote", and the date, "Date", shall be selected. The following "Inclure les métadonnées de l'extrait" is irrelevant. "Séparer les mots de la cible" and "Inclure les numéros de résultats" are the final criterias : both are ticked by default. The first one has to be deselected.
+
+-3-Import the raw data excel document in an ordered excel table
+
+After having opened a new excel file, click on "Données" and "A partir du texte" to import our downloaded excel document of raw data exported from the database Frantext in step 2. During importation, the "Types de données d’origine" has to be "Délimité" in order to create clear cells and the "Origine du fichier", or the origin of the file, needs to be set on "65001 : Unicode (UTF-8)". Then, in the list of "Séparateurs", "Tabulation" and "Virgule" have to be ticked and the "Identificateur de texte" is to be set on " " ". The import should present a clear table of organized data.
+
+-4-Inform the ordered excel table
+
+A line needs to be added above the first line in order to have the space required to title the columns. Three should be precised, from left to right : "ID", the number of the result,"Cote", the identification of the source, "Date", the date of the occurence, "LC", the left context, "Forme", the form of the occurence and "RC", the right context.
+
+-5-Import the finished ordered excel table to the code
+This import needs to be execute at the very beginning of the code. It is required in the first cell, which is represented here:
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import numpy as np
+    excel = pd.read_excel ('Name.xlsx')
+    f= excel.drop(columns=['ID','Cote','LC','RC'])
+    x=input('insert first forme')
+All that is required to import the finished file is to replace "Name" by the actual name given to the saved file. After that, the code needs to be run and self-explainatory direction will be given during its course (such as "insert first form").
+
+Code written by : Giovanni Merici
+Data extraction instructions written by : Axelle Domingues

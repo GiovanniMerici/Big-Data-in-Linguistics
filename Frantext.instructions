@@ -1,6 +1,4 @@
-This code presents itself as a tool to use over any chunk of data extracted from the database Frantext. It has two different abilities. The first is to yield three types of graphs (KDE (Kernel Density Estimation), histogram and box plot) revealing the evolution of any particular form over any chosen time frame. There is no chosen time frame in the case of boxplot, as that type of graph applies to all the occurences of interest in their entirety, not discarding any for the sake of a peculiar time window. The second is to present an offline search engine that grants a visual of all occurences of different forms occuring in a choosen year or of all occurences of one specific form over the entire dataframe giving a time limit.
-
-In order to use this tool, specific yet easy steps must be followed during the extraction of data from Frantext in order to produce the adequate dataframe. What follows is the methodology to apply whenever this tool is used.
+In order to use the tools, specific yet easy steps must be followed during the extraction of data from Frantext in order to produce the adequate dataframe. What follows is the methodology to apply whenever this tool is used.
 
 -1-Search for data on database Frantext
  
